@@ -1,1 +1,4 @@
-print("Starting the rock paper scissors project")
+import game
+
+rps = game.Game()
+rps.start_game()
