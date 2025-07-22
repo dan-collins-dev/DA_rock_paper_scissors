@@ -1,0 +1,1 @@
+print("Starting the rock paper scissors project")
