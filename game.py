@@ -60,7 +60,7 @@ class Game:
         print("\nWelcome to Rock, Paper, Scissors!\n")
 
     
-    def compare_choices(self, player_choice, opponent_choice):
+    def compare_choices(self, player_choice: str, opponent_choice: str) -> None:
         print(f"\nYour Choice: {player_choice}")
         print(f"Your opponent's choice: {opponent_choice}")
         
@@ -72,7 +72,7 @@ class Game:
             self.evaluate_against_scissors(opponent_choice)
 
         
-    def evaluate_against_rock(self, opponent_choice) -> None:
+    def evaluate_against_rock(self, opponent_choice: str) -> None:
         if opponent_choice == "rock":
             print("\nThis round ended in a tie!")
             self.add_tie()
@@ -84,7 +84,7 @@ class Game:
             self.add_player_point()
     
     
-    def evaluate_against_paper(self, opponent_choice) -> None:
+    def evaluate_against_paper(self, opponent_choice: str) -> None:
         if opponent_choice == "rock":
             print("\nYou win this round!")
             self.add_player_point()
@@ -96,7 +96,7 @@ class Game:
             self.add_opponent_point()
 
     
-    def evaluate_against_scissors(self, opponent_choice) -> None:
+    def evaluate_against_scissors(self, opponent_choice: str) -> None:
         if opponent_choice == "rock":
             print("\nYou lost this round!")
             self.add_opponent_point()
